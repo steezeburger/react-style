@@ -30,7 +30,7 @@ Style React components:
 
     }
 
-By default styles are applied to the DOM as inline styles.
+Notice that the property is `styles`, not `style`. By default styles are applied to the DOM as inline styles.
 
 ## Extracting styles into CSS at build time
 
