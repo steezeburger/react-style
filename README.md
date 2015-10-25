@@ -3,6 +3,11 @@
 [![Build Status](https://travis-ci.org/js-next/react-style.svg?branch=master)](https://travis-ci.org/js-next/react-style)
 [![Code Climate](https://codeclimate.com/github/js-next/react-style/badges/gpa.svg)](https://codeclimate.com/github/js-next/react-style)
 
+**Note 25 Oct**
+
+The current version of React Style does not support React 0.14, we are working on that and I hope to have a React 0.14 compatible release within the next 2 weeks.
+
+
 React Style is an approach for styling [React][] components. It uses the same
 syntax as `StyleSheet.create` from [React Native][].
 
@@ -31,6 +36,8 @@ Style React components:
     }
 
 Notice that the property is `styles`, not `style`. By default styles are applied to the DOM as inline styles.
+
+
 
 ## Extracting styles into CSS at build time
 
