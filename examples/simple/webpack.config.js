@@ -11,7 +11,8 @@ module.exports = {
   },
   resolve: {
     alias: {
-      'react$': require.resolve('../../node_modules/react-dom/lib/index'),
+      'react$': require.resolve('../../node_modules/react'),
+      'react-dom$': require.resolve('../../node_modules/react-dom'),
       'react-style$': require.resolve('../../lib/index')
     }
   },
