@@ -1,10 +1,10 @@
 // taken from https://github.com/facebook/react/blob/master/jest/preprocessor.js
 "use strict";
 
-var ReactTools = require('react-tools');
+var babel = require('babel');
 
 module.exports = {
   process: function(src) {
-    return ReactTools.transform(src, {harmony: true});
+    return babel.transform(src);
   }
 };
