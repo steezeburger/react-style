@@ -12,6 +12,25 @@ var Button       = require('./Button');
 var ButtonGroup  = require('./ButtonGroup');
 var ButtonStyles = require('./ButtonStyles');
 
+var TextAlignSwitcherStyles = StyleSheet.create({
+
+  childStyle: {
+    borderRadius: 0,
+    margin: 0
+  },
+
+  firstChildStyle: {
+    borderTopLeftRadius: 3,
+    borderBottomLeftRadius: 3
+  },
+
+  lastChildStyle: {
+    borderTopRightRadius: 3,
+    borderBottomRightRadius: 3
+  }
+
+});
+
 class TextAlignSwitcher extends React.Component {
 
   render() {
@@ -42,24 +61,38 @@ class TextAlignSwitcher extends React.Component {
   }
 }
 
-var TextAlignSwitcherStyles = StyleSheet.create({
 
-  childStyle: {
-    borderRadius: 0,
-    margin: 0
+var ApplicationStyles = StyleSheet.create({
+
+  normalStyle: {
+    backgroundColor: 'white',
+    fontSize: '10pt',
+    padding: '1em',
+    margin: 10
   },
 
-  firstChildStyle: {
-    borderTopLeftRadius: 3,
-    borderBottomLeftRadius: 3
+  childStyle: {
+    marginRight: '0.5em'
   },
 
   lastChildStyle: {
-    borderTopRightRadius: 3,
-    borderBottomRightRadius: 3
+    marginRight: 0
+  },
+
+  '@media screen and (min-width: 800px)': {
+
+    normalStyle: {
+      backgroundColor: 'purple'
+    },
+
+    childStyle: {
+      marginLeft: 50
+    }
+
   }
 
 });
+
 
 class Application extends React.Component{
 
@@ -90,36 +123,6 @@ class Application extends React.Component{
   }
 
 }
-
-
-var ApplicationStyles = StyleSheet.create({
-
-  normalStyle: {
-    backgroundColor: 'white',
-    fontSize: '10pt',
-    padding: '1em',
-    margin: 10
-  },
-
-  childStyle: {
-    marginRight: '0.5em'
-  },
-
-  lastChildStyle: {
-    marginRight: 0
-  },
-
-  '@media screen and (min-width: 800px)': {
-    normalStyle: {
-      backgroundColor: 'purple'
-    },
-    childStyle: {
-      marginLeft: 50
-    }
-  }
-    
-});
-  
 
 if (typeof window !== 'undefined') {
   ReactDOM.render(<Application />, document.getElementById('app'));
