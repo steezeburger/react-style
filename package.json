@@ -8,6 +8,7 @@
     "react": ">=0.12.0 || 0.13.0-rc1 || 0.13.0-rc2 || >=0.13.0"
   },
   "devDependencies": {
+    "fbjs": ">=0.1.0-alpha.12",
     "jest-cli": "^0.4.0",
     "jshint": "^2.6.3",
     "jsx-loader": "^0.12.2",
